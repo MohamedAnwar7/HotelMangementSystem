@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ExistController">
+   <children>
+      <Pane layoutX="37.0" layoutY="70.0" prefHeight="290.0" prefWidth="515.0" style="-fx-border-color: black; -fx-border-radius: 60;">
+         <children>
+            <Label layoutX="46.0" layoutY="30.0" text="Food">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="102.0" text="Trip">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="166.0" text="Duration">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="edit_food" layoutX="300.0" layoutY="28.0" onAction="#food" text="edit" underline="true" />
+            <JFXButton fx:id="edit_trip" layoutX="300.0" layoutY="90.0" onAction="#trip" text="edit" underline="true" />
+            <JFXButton fx:id="edit_duration" layoutX="300.0" layoutY="167.0" onAction="#duration" text="edit" underline="true" />
+         </children>
+      </Pane>
+      <Label layoutX="99.0" layoutY="28.0" prefHeight="28.0" prefWidth="112.0" text="Room Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_roomnum" layoutX="211.0" layoutY="28.0" prefHeight="28.0" prefWidth="112.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_done" layoutX="521.0" layoutY="360.0" onAction="#done" text="Done" />
+   </children>
+</AnchorPane>
