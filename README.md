@@ -1,4 +1,4 @@
 # HotelMangementSystem
 
-Simple Desktop application for hotel .
-still working on the design >
+Simple Desktop application for hotel management .
+Notice: Design needs some improvements.
